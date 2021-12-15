@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background: linear-gradient(90deg, #073b9b, #3989d4);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+    margin: 30px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    width: 600px;
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 10px 10px #333;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1{
+    color: cornsilk;
+    margin: 0px 0px 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-form{
+    display: flex;
+    width: 500px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-input{
+    outline: none;
+    border: 1px silid silver;
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.add-todo-btn{
+    border: none;
+    outline: none;
+    width: 100px;
+    margin: 10px 0px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #073b9b, #3989d4);
+    color: white;
+    cursor: pointer;
+}
+
+.todo-row{
+    display: flex;
+    padding: 10px;
+    margin: 20px 0px;
+    justify-content: space-between;
+    color: whitesmoke;
+    background: linear-gradient(to right, #0943a1, #03b2f7, #022e61);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.delete-icon{
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.update-icon{
+    cursor: pointer;
+    border: 1px solid;
+    font-size: 22px;
+    margin: 0px 10px;
+}
+
+.complete{
+    text-decoration: line-through;
+    background: linear-gradient(to right, #606368, #55819e, #58728b);
 }
